@@ -16,6 +16,8 @@ RUN pip3 install uiautomator2
 
 RUN pip3 install weditor
 
+EXPOSE 17310
+
 ENTRYPOINT weditor
 
 
