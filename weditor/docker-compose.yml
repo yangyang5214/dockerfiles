@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  weditor:
+    image: beer5215/weditor
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: weditor
+    ports:
+      - target: 17310
+        published: 17310
+        protocol: tcp
+    restart: always
+
