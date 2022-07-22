@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+  weditor:
+    image: beer5215/golang-crossbuild-arm
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: golang-crossbuild-arm
+    restart: always
+
