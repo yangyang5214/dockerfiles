@@ -1,7 +1,7 @@
 version: "3.5"
 
 services:
-  weditor:
+  golang-crossbuild-armhf:
     image: beer5215/golang-crossbuild-armhf
     build:
       context: .

@@ -1,7 +1,7 @@
 version: "3.5"
 
 services:
-  weditor:
+  golang-crossbuild-debian10:
     image: beer5215/golang-crossbuild-debian10
     build:
       context: .
