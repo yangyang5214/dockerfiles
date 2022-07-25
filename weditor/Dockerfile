@@ -9,8 +9,11 @@ RUN apk update \
     && apk add libxslt \
     && apk add libxslt-dev
 
-RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install --upgrade Pillow
+RUN apk add usbutils
+
+RUN /usr/bin/python3.8 -m pip install --upgrade pip
+
+RUN pip3 install Pillow
 
 RUN pip3 install uiautomator2
 
